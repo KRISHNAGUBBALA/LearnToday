@@ -31,7 +31,7 @@ public class AdminControllerTest {
 	public void testGetAllCources() {
 		MockHttpServletRequest request = new MockHttpServletRequest();
         RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
-        ResponseEntity<List<Course>> responseEntity = adminController.getAllCourses();
+        ResponseEntity<List<Course>> responseEntity = adminController.getAllCourse();
         assertThat(responseEntity.getStatusCodeValue()).isEqualTo(200);
 	}
 	
