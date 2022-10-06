@@ -22,8 +22,8 @@ public class AdminController {
 	@Autowired
 	AdminService adminService;
 
-	@GetMapping("/getAllCourses")
-	public ResponseEntity<List<Course>> getAllCourses() {
+	@GetMapping("/getAllCourse")
+	public ResponseEntity<List<Course>> getAllCourse() {
 		logger.info("Get All Course in controller");
 		return new ResponseEntity<List<Course>>(adminService.getAllCources(), HttpStatus.OK);
 	}
